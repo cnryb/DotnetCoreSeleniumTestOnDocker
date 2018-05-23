@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dotnetcoreseleniumtestondocker:
+    image: ${DOCKER_REGISTRY}dotnetcoreseleniumtestondocker
+    build:
+      context: .
+      dockerfile: DotnetCoreSeleniumTestOnDocker/Dockerfile
